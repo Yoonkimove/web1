@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123584804-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123584804-1');
+function nightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night') {
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+       alist[i].style.color = 'powderblue';
+       i = i + 1;
+     }
+  } else {
+    target.style.backgroundColor='white';
+    target.style.color='black';
+
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0
+    while(i < alist.length){
+       alist[i].style.color = 'blue';
+
+       i = i + 1;
+     }
+  }
+}
+</script>
+
+    <title>Virginia Woolf Quotes</title>
+    <link rel="icon" href="Virginia_Woolf_signature.png">
+    <style>
+      h1{font-family: 'Lato', sans-serif;
+          font-weight: black;
+          font-size: 40px;
+          margin-left: 0px;
+          margin-top: 10px;}
+      input{float:right;
+            margin-right: 20px;}
+      p{font-family: 'Open Sans', sans-serif;}
+      nav{overflow: hidden;
+          display: flex;}
+
+      nav a {
+            padding: 0px 15px;}
+      nav a:hover {
+                color: darkorange;
+                }
+      nav a:nth-child(2){padding: 0px 10px;}
+
+      li{font-family: 'Open Sans', sans-serif;
+          margin-top: 0px;
+          display: flex;
+          float:left;}
+      .thumbnail-wrappper {width: 25%; }
+      .thumbnail {position: relative;
+                  padding-top: 40%; /* 4:3 ratio */
+                  overflow: hidden;
+                  margin-top:20px;}
+      .thumbnail .centered {position: absolute;
+                            top: 0; left: 0; right: 0; bottom: 0;
+                            -webkit-transform: translate(50%,50%);
+                            -ms-transform: translate(50%,50%); transform: translate(30%,50%); }
+      .thumbnail .centered img {position: absolute; top: 0; left: 0; max-width: 70%; height: auto;
+                                -webkit-transform: translate(-50%,-50%);
+                                -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+
+    @media(max-width:800px){
+
+      nav{
+        /* border-right:none; */
+        flex-direction: column;
+      }
+      nav a{
+              padding: 5px 0px;}
+      }
+      h1 {
+        border-bottom:none;
+        font-size: 30px;
+      }
+    }
+
+      /* div{overflow: hidden;
+          width: 100%;
+          height:300px;}
+          /* width:100%;} */
+      /* #none{height:300px;} */
+      /* #img{
+          justify-content:center;
+          align-items:center;}
+      img{/*max-width: 100%; max-height: 100%;*/
+          /* max-width: 450px;
+          height: auto;
+          vertical-align:middle;} */
+      .link{font-size:15px;
+            color:#959595;}
+    </style>
+  </head>
+
+  <body>
+    <h1>Virginia Woolf Quotes</h1>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
+    <!-- <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    "> -->
+
+    <nav>
+      <li><a href="About_VW.html">About Virginia Woolf</a></li>
+      <li><a href="View_by_topic.html">View by topic</a></li>
+      <li><a href="Her_friends.html">Her friends</a></li>
+    </nav>
+
+    <div class="thumbnail-wrapper">
+       <div class="thumbnail">
+         <div class="centered">
+           <img src="virginia woolf quotes page.jpg">
+         </div>
+       </div>
+    </div>
+    <p>One cannot think well, love well, <strong><u>sleep</u> well</strong>, if one has not dined well.
+    <br><span class="link">Read more at: <a href=https://www.brainyquote.com/quotes/virginia_woolf_107352>https://www.brainyquote.com/quotes/virginia_woolf_107352</a></span></p>
+    <p style="margin-top:20px;">Some people go to priests; others to poetry; I to my friends</p>
+
+
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://virginia-woolf-quotes.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </body>
+  </html>
